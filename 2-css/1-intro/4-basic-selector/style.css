@@ -1,0 +1,20 @@
+/* tag selector  */
+/* li{
+    color: blueviolet;
+} */
+
+
+/* class . nat call  */
+.fruit{
+    color: orange;
+}
+
+.electronic{
+    color: blue;
+}
+
+
+/* id # nat call  */
+#list{
+    background-color: gray;
+}

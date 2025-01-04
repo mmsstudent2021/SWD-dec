@@ -1,0 +1,45 @@
+.heading{
+    color: blue;
+    text-align: left;
+    /* text-decoration:underline; */
+}
+
+.para{
+    text-align: justify;
+    /* line-height: 80px; */
+    /* word-spacing: 30px; */
+    /* white-space: nowrap; */
+}
+
+#discount{
+    text-decoration: line-through;
+}
+
+#link{
+    text-decoration: none;
+}
+
+.transform{
+    text-transform: lowercase;
+    letter-spacing: 50px;
+}
+
+
+/* font  */
+.sans-serif{
+    font-family: sans-serif;
+}
+
+.serif{
+    font-family: serif;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+.font{
+    font-family: 'Montserrat', serif;
+    font-style: italic;
+    font-weight: 900;
+}
