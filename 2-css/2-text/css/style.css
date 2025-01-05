@@ -43,3 +43,17 @@
     font-style: italic;
     font-weight: 900;
 }
+
+/* .online{
+    font-family: "Rubik Vinyl", serif;
+    font-style: italic;
+    font-size: 60px;
+} */
+
+.variant{
+    font-variant:small-caps;
+}
+
+.short{
+    font: italic bold 20px/30px monospace
+}

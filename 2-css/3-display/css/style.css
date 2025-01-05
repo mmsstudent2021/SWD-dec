@@ -1,0 +1,18 @@
+.heading-block{
+    background-color: lightblue;
+    display: block;
+    width: 800px;
+}
+
+.heading-inline{
+    background-color: lightcoral;
+    display: inline;
+    /* width pay lox ma ya  */
+    /* width: 500px; */
+}
+
+.heading-inline-block{
+    background-color: lightgreen;
+    display: inline-block;
+    width: 600px;
+}
