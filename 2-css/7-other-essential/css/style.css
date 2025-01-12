@@ -1,0 +1,54 @@
+body{
+    /* background-image: url("../assets-main/images/poe-mamhe-thar-2.jpg"); */
+    /* border: 1px solid black;
+    height: 100vh; */
+}
+
+.opacity{
+    border: 10px solid rgba(0, 0, 0, 0.364);
+    width: 200px;
+    height: 100px;
+    padding: 30px;
+    background-color: rgb(224, 255, 255);
+    margin: 80px auto;
+    font-size: 50px;
+    /* color: rgba(0, 0, 0, 0.433); */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+
+    /* 0-1  */
+    opacity: 0.5;
+}
+
+.visibility{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid black;
+    margin-right: 10px;
+    /* pyout tl nay yar u tl  */
+    visibility: hidden
+
+    /* nay yar ma u buu akone pyout  */
+    /* display: none; */
+}
+
+.overflow{
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+/* float  */
+
+img{
+    /* float: right; */
+    border: 1px solid black;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+h1{
+    clear: both;
+}
