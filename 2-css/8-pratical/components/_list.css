@@ -1,0 +1,25 @@
+.list{
+    border: 1px solid hsl(218, 11%, 65%);
+    list-style-type: none;
+    width: 240px;
+    overflow: hidden;
+}
+
+.list-item{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-bottom: 1px solid #9CA3AF;
+}
+
+.list-item:last-child{
+    border-bottom: none;
+}
+
+.list.list-hover .list-item:hover{
+    background-color: orange;
+}
+
+.active{
+    background-color: orchid;
+}

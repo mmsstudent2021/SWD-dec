@@ -1,0 +1,25 @@
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+
+/* rounded and pill buttons */
+.rounded {
+  border-radius: 6px;
+}
+
+.pill {
+  border-radius: 100px;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}

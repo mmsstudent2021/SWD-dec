@@ -1,0 +1,31 @@
+.menu{
+    border: 1px solid hsl(218, 11%, 65%);
+    width: 240px;
+    overflow: hidden;
+}
+
+.menu-item{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-bottom: 1px solid #9CA3AF;
+}
+
+.menu-item:last-child{
+    border-bottom: none;
+}
+
+.menu.horizontal{
+    width: 488px;
+}
+
+.menu.horizontal .menu-item{
+    display: inline-block;
+}
+
+.menu.horizontal .menu-item{
+    border-bottom: none;
+}

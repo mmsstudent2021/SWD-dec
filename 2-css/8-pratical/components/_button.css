@@ -1,0 +1,43 @@
+.btn {
+  padding: 0px 20px;
+  height: 35px;
+  line-height: 35px;
+  display: inline-block;
+  margin-right: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+/* solid or fill buttons  */
+.btn-blue {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  border: 1px solid var(--pink);
+}
+
+/* outline buttons  */
+.btn-blue-outline {
+  color: var(--blue);
+  border: solid 1px var(--blue);
+  background-color: transparent;
+}
+
+.btn-pink-outline {
+  color: var(--pink);
+  border: solid 1px var(--pink);
+  background-color: transparent;
+}
+
+.btn-icon {
+  width: 48px;
+  height: 48px;
+  padding: 0px;
+}
+
+i {
+  font-size: 14px;
+}
