@@ -8,6 +8,11 @@
   text-decoration: none;
 }
 
+.btn-dark{
+  background-color: var(--gray-900);
+  color: white;
+  border: 1px solid var(--gray-900);
+}
 /* solid or fill buttons  */
 .btn-blue {
   background-color: var(--blue);
