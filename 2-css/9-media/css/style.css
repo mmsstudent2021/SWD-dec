@@ -7,7 +7,7 @@
     font-size: 16px;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .heading{
         font-size: 50px;
         color: red;
@@ -30,7 +30,7 @@
         font-size: 12px;
         color: skyblue;
     }
-}
+} */
 
 .print-text{
     display: none;
@@ -46,15 +46,15 @@
     }
 }
 
-/* @media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .heading{
-        font-size: 50px;
-        color: red;
+        font-size: 50px !important;
+        color: red !important;
     }
 
     .para{
-        font-size: 14px;
-        color: brown;
+        font-size: 14px !important;
+        color: brown !important;
     }
     
 }
@@ -69,4 +69,8 @@
         font-size: 12px;
         color: skyblue;
     }
-} */
+}
+
+h2{
+    color: tomato !important;
+}
