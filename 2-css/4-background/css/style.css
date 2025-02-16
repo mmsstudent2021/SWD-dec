@@ -30,3 +30,26 @@
     /* conic-gradient => (color deg) */
     background-image: conic-gradient(pink 50deg, blue, yellow);
 }
+
+.box4{
+    border: 10px solid rgba(0, 0, 0, 0.173);
+    padding: 80px;
+    height: 500px;
+    background-image: url("../assets-main/images/poe-mamhe-thar-3.jpeg");
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    /* background-origin: padding-box; */
+    background-clip: content-box
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    /* background-image: url("../assets-main/images/poe-mamhe-thar-3.jpeg"); */
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+    background-image: repeating-linear-gradient(135deg, hsl(307,61%,65%) 0px, hsl(307,61%,65%) 129px,hsl(352,61%,65%) 129px, hsl(352,61%,65%) 258px,hsl(37,61%,65%) 258px, hsl(37,61%,65%) 387px,hsl(82,61%,65%) 387px, hsl(82,61%,65%) 516px,hsl(127,61%,65%) 516px, hsl(127,61%,65%) 645px,hsl(172,61%,65%) 645px, hsl(172,61%,65%) 774px,hsl(217,61%,65%) 774px, hsl(217,61%,65%) 903px);
+
+    background-clip: text;
+    color: rgba(0, 0, 0, 0.033);
+}

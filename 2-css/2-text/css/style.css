@@ -1,3 +1,11 @@
+@font-face {
+    font-family: aa;
+    src: url("../pilowlava-master/Fonts/Pilowlava-Regular.otf");
+  }
+
+.font-face{
+    font-family: aa;
+}
 .heading{
     color: blue;
     text-align: left;
