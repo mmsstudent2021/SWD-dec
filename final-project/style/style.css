@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --font-sans: "DM Sans", sans-serif;
+    --color-primary: #EA652D;
+}
+
+.custom-container{
+    @apply lg:max-w-[1120px] mx-auto xl:px-0 md:px-20 px-8
+}
+
+.primary-btn{
+    @apply text-[#FAFAFA] bg-primary py-3 px-6 font-semibold
+}
