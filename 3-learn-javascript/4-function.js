@@ -11,7 +11,7 @@
 // console.log(run());
 
 // rest parameter 
-function area (width,breadth,...aa) {
+function area (width=0,breadth,...aa) {
     // console.log(width);
     // console.log(breadth);
     console.log(aa);
