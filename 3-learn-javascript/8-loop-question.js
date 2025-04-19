@@ -320,14 +320,14 @@ for(x in points){
 // 5. ကြိုက်တဲ့ index ကစ ကြိုက်သလောက် အခန်းအရည်အတွက် ခွဲထုတ် နိုင်တဲ့ function
 // start index 2, length 3
 // start index 4, length 2
-1 , 3 =  4
-[0,1,2,3,4,5,6,7]
+// 1 , 3 =  4
+// [0,1,2,3,4,5,6,7]
 const sliceArray = function (startIndex,length,arr) {
     const result = []
     let index = 0
     let endIndex = startIndex + length
     for(x in arr ){
-        4 >= 1 && 4 < 4
+        // 4 >= 1 && 4 < 4
         if(x >= startIndex && x < endIndex){
             result[index++] = arr[x]
         }
@@ -335,7 +335,7 @@ const sliceArray = function (startIndex,length,arr) {
     return result
 }
 
-console.log(sliceArray(1,3,[10,20,30,40,50]))
+// console.log(sliceArray(1,3,[10,20,30,40,50]))
 
 
 // 6. CopyArray, Modified Array, Filter Array
@@ -353,20 +353,77 @@ points[0] = "aa"
 // console.log(points)
 // console.log(copier)
 
-
+// ***
+// ***
+// ***
 
 // Problems
 // 3 x 3 square လေးဖန်တီးရအောင်
 // * * *
 // * * *
 // * * *
+let star = ""
+for(let i = 1; i <= 3; i++){
+    star += "***\n"
+}
+// console.log(star);
+
 // n x n square လေးဖန်တီးရအောင်
+// ****
+// ****
+// ****
+// ****
+
+const square = function (w,h,chr="*") {
+    let result = ""
+    for(let x = 1; x <= h; x++){
+        for(let i = 1; i <= w; i++){
+            result += chr
+        }
+        result += "\n"
+    }
+    return result
+}
+// console.log(square(3,2));
+// console.log(square(4,4,"1"));
+
 // 3row triangle လေးဖန်တီးရအောင်
 // * 
 // * * 
 // * * *
 
+// *
+// **
 
+const triangle = function (h,chr="*") {
+    let result = ""
+    for(let i = 1; i <= h; i++){
+        for(let x = 1; x <= i; x++){
+            result += chr
+        }
+        result += "\n"
+    }
+    return result
+}
+// console.log(triangle(2));
+// console.log(triangle(5));
+
+
+
+// **
+// *
+
+const reverseTriangle = function (h,chr="*") {
+    let result = ""
+    for(let i = h; h >= 1; i--){
+        for(let x = 1; x <= i; x++){
+            result += chr
+        }
+        result += "\n"
+    }
+    return result
+}
+// console.log(reverseTriangle(2));
 
 const marks = {
     mm: 45,
@@ -381,7 +438,7 @@ const student1Mark = [
     {
         subject: "Myanmar",
         short: "mm",
-        mark: 45
+        mark: 45,
     },
     {
         subject: "English",
@@ -413,11 +470,14 @@ const student1Mark = [
 const allStudentsMark = [
     {
         name: "Mg Mg",
+        // overall: "pass",
+        // distinction: 3,
         marks: [
             {
                 subject: "Myanmar",
                 short: "mm",
-                mark: 45
+                mark: 45,
+                // result: "fail"
             },
             {
                 subject: "English",
@@ -521,8 +581,61 @@ const allStudentsMark = [
 
 // Problems
 // 1. marks, studentMark စုစုပေါင်း ရေးပြပါ
+let total2 = 0
+for(x in marks){
+    total2 += marks[x]
+}
+// console.log(total2);
+
+let total3 = 0
+for(x of student1Mark){
+    // console.log(x.mark);
+    // console.log(x["mark"]);
+    total3 += x.mark
+}
+// console.log(total3);
+
 // 2. studentMark မှဘာသာရပ်တစ်ခုစီ ကျရှံးတွက်ပေးပါကြရှုံး
 // 3. over all အောင်မြင်၊ ကျရှုံးတွက်ပေးပါ
+
+// 1 => pass of fail 
+// 2 => result add new obj data
+// 3 => overall 
+const passOrFail = function (mark) {
+    return mark >= 40 ? "pass" : "fail"
+}
+
+let overall = "pass"
+for(x of student1Mark){
+    let resultBySubject = passOrFail(x.mark)
+    // console.log(resultBySubject);
+    x.result = resultBySubject
+    if(resultBySubject === "fail"){
+        overall = "fail"
+    }
+}
+// console.log(student1Mark);
+// console.log(overall);
+
 // 4. ကျောင်းသားအားလုံး အောင်မြင်၊ ကျရှုံးတွက် ပေးပါ
 // 5. အောင်မြင်တဲ့လူတွေဆို Distinction ပါရင် ထည့်ရည်တွက်ပေးပါ
 
+for(student of allStudentsMark){
+    // console.log(student.marks);
+    student.overall = "pass"
+    student.distinction = 0
+    for(x of student.marks){
+        console.log(x); 
+        let resultBySubject = passOrFail(x.mark)
+        x.result = resultBySubject
+
+        if(resultBySubject === "fail"){
+            student.overall = "fail"
+        }
+
+        if(x.mark >= 80) {
+            student.distinction += 1
+        }
+    }
+}
+// console.log(allStudentsMark);
