@@ -154,3 +154,21 @@
 //     return "bite ma wa buu"
 // }
 // console.log(eat("hotpot"));
+
+let fruit = "aa"
+switch(fruit){
+    case "apple":
+        console.log("apple is red of green color");
+        break;
+
+    case "orange":
+        console.log("orange is orange color")  
+        break;
+
+    case "banana":
+        console.log("banana is yellow color")
+        break;
+
+    default:
+        console.log("i don't know")
+}
