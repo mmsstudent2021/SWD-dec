@@ -119,10 +119,39 @@ const people = [
   ];
 
 //   console.log(people)
-for(obj of people){
-    // console.log(obj)
-    for(x in obj){
-        console.log(obj[x])
-    }
-    console.log("=============")
-}
+// for(obj of people){
+//     // console.log(obj)
+//     for(x in obj){
+//         console.log(obj[x])
+//     }
+//     console.log("=============")
+// }
+
+
+// while, do while 
+// let count = 1
+// while(count <= 5){
+//   console.log(count)
+//   count++
+// }
+
+// do{
+//   console.log(count)
+//   count++
+// }while(count <= 5)
+
+// typeof 
+// console.log(typeof "")
+// console.log(typeof 9)
+// console.log(typeof {})
+// console.log(typeof [])
+
+// truthy falsy 
+// false 
+console.log(false ? "true" : "false")
+console.log(0 ? "true" : "false")
+console.log("" ? "true" : "false")
+console.log('' ? "true" : "false")
+console.log(null ? "true" : "false")
+console.log(undefined ? "true" : "false")
+console.log(NaN ? "true" : "false")
