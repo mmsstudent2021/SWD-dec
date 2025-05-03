@@ -47,3 +47,5 @@ console.log(num.toPrecision()); // '0.000123'
 console.log(num.toPrecision(5)); // '0.00012300'
 console.log(num.toPrecision(2)); // '0.00012'
 console.log(num.toPrecision(1)); // '0.0001'
+
+
