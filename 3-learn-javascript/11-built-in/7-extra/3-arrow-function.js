@@ -18,4 +18,21 @@ const run3 = (x) =>  {
     return "run 3"
 }
 
-console.log(run3());
+// console.log(run3());
+
+const obj = {
+    a: "aa",
+    b(){
+        return this
+    },
+
+    // arrow fn nat yay yin this ka window ko pya 
+    c:  () =>  {
+        return this
+    }
+}
+
+console.log(obj);
+console.log(obj.b());
+console.log(obj.c());
+console.log(this);
