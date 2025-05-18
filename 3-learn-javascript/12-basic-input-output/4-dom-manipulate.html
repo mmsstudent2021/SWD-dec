@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        .hide{
+            /* display: none; */
+            visibility: hidden;
+        }
+        .skill{
+            border: 1px solid black;
+            padding: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .active{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading" class="san kyi tar" title="testing" style="text-align: center; color: blue; font-size: 30px;">heading</h1>
+
+    <!-- add background color  -->
+    <button id="addBackgroundBtn">add background color</button>
+    <br><br>
+
+    <!-- increase decrease font size  -->
+    <button id="increase">increase</button>
+    <button id="decrease">decrease</button>
+    <br><br>
+
+    <!-- show hide toggle box  -->
+    <div id="box"></div><br>
+    <button id="toggle">toggle</button>
+
+    <!-- skill count  -->
+    <div>
+        <h1>Your Skill ( <span id="skillCount">0</span> )</h1>
+
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JS</div>
+    </div><br><br>
+
+    <!-- attribute  -->
+     <a href="https://google.com" target="_blank">google</a>
+
+     <img src="./image/poe-mamhe-thar-2.jpg" width="200" alt="">
+    <script src="./js/4-dom-manipulate.js"></script>
+</body>
+</html>
