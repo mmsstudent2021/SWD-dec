@@ -13,8 +13,8 @@
 
       <!-- add task input  -->
       <div class="flex justify-between items-center mb-3">
-        <input class="border w-full py-1 px-2 focus:outline-0" type="text" />
-        <button class="bg-black py-1 px-2">
+        <input id="textInput" class="border w-full py-1 px-2 focus:outline-0" type="text" />
+        <button id="addBtn" class="bg-black py-1 px-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -37,9 +37,9 @@
         <h5 class="text-xl font-bold font-serif">Your List</h5>
 
         <p class="bg-black rounded-full px-3 py-1 text-white">
-          <span>0</span>
+          <span id="totalDoneList">0</span>
           <span>/</span>
-          <span>0</span>
+          <span id="totalList">0</span>
         </p>
       </div>
 
@@ -50,7 +50,8 @@
             <h1 class=" text-lg font-bold text-center mt-5">There is no list</h1>
         </div>
 
-        <div id="list" class=" flex justify-between items-center border py-3 px-2 mb-3">
+        <!-- <div class="list">
+          <div class=" flex justify-between items-center border py-3 px-2 mb-3">
           <div class=" flex gap-1">
             <input type="checkbox" />
 
@@ -93,6 +94,7 @@
             </button>
           </div>
         </div>
+        </div> -->
 
       </div>
     </div>
